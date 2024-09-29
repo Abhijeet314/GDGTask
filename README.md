@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+GDG Task - React Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Table of Contents
+About the Project
+Features
+Getting Started
+Prerequisites
+Installation
+Running Locally
+Docker Support
+Deployment
+Usage
+Contributing
+License
+Contact
+About the Project
+This project is a Google Developer Group (GDG) website built using React. The website showcases the GDG RCOEM campus community, featuring events, stats, and key information about the group and its activities.
 
-## Available Scripts
+Features
+Light/Dark mode toggle.
+Hamburger menu for mobile responsiveness.
+Display of event stats, community members, and attendees.
+Footer with social media links and contact information.
+Smooth integration with Docker for containerization.
+Getting Started
+Follow these steps to get a local copy of the project up and running.
 
-In the project directory, you can run:
+Prerequisites
+Make sure you have the following tools installed:
 
-### `npm start`
+Node.js
+npm
+Docker
+Installation
+Clone the repo:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+git clone https://github.com/yourusername/repository-name.git
+cd repository-name
+Install NPM packages:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copy code
+npm install
+Running Locally
+Start the development server:
 
-### `npm test`
+bash
+Copy code
+npm start
+This will launch the app at http://localhost:3000.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Docker Support
+This app is also containerized using Docker.
 
-### `npm run build`
+Build the Docker image:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copy code
+docker build -t gdg-task-app .
+Run the Docker container:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+Copy code
+docker run -p 3000:3000 gdg-task-app
+The application will be accessible at http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Deployment
+The app is ready to be deployed to platforms like Vercel or DockerHub.
 
-### `npm run eject`
+Vercel Deployment:
+Create a Vercel account and link your GitHub repository.
+Vercel will automatically detect the project and deploy it.
+DockerHub:
+Login to DockerHub:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+bash
+Copy code
+docker login
+Tag the image:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash
+Copy code
+docker tag gdg-task-app your-dockerhub-username/gdg-task-app
+Push the image to DockerHub:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+bash
+Copy code
+docker push your-dockerhub-username/gdg-task-app
+Usage
+Toggle between light and dark mode using the switch in the header.
+Navigate through the site using the navigation bar or the hamburger menu on smaller screens.
+View key stats about GDG activities on the Stats section.
+Check upcoming events and contact the team via social links in the footer.
+Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Fork the Project.
+Create your Feature Branch (git checkout -b feature/YourFeature).
+Commit your Changes (git commit -m 'Add some YourFeature').
+Push to the Branch (git push origin feature/YourFeature).
+Open a Pull Request.
+License
+Distributed under the MIT License. See LICENSE.txt for more information.
 
-## Learn More
+Contact
+GDG RCOEM - dsc.rknec@gmail.com
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project Link: https://github.com/yourusername/repository-name
