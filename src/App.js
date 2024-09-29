@@ -1,23 +1,40 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import './tailwind.css';
+import Header from './Header';
+import HeroSection from './HeroSection';
+import '@fortawesome/fontawesome-free/css/all.min.css'; // font awesome for chevron down icons
+import Mission from './Mission';
+import Stats from './Stats';
+import Technologies from './Technologies';
+import FAQS from './FAQS';
+import Footer from './Footer';
 
 function App() {
+  // Dark mode state
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  // Function to toggle dark mode
+  const toggleDarkMode = () => {
+    setIsDarkMode((prevMode) => !prevMode);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // applying isDarkMode state
+    <div className={`${isDarkMode ? 'dark' : ''}`}>
+
+      <div className="App bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen transition-colors duration-500">
+        {/* Header component */}
+        <Header isDarkMode={isDarkMode} onToggleDarkMode={toggleDarkMode} />
+        
+        {/* Other components */}
+        <HeroSection />
+        <Mission />
+        <Stats />
+        <Technologies />
+        <FAQS />
+        <Footer />
+      </div>
     </div>
   );
 }
