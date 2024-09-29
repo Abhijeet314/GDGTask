@@ -71,8 +71,9 @@ docker run -p 3000:3000 gdg-task-app
 ### Using Docker Image
 You can also use the pre-built Docker image available on Docker Hub. To get started, follow these steps:
 
-1.Ensure you have Docker Desktop installed and running.
-2.Pull the Docker image:
+1.Ensure you have Docker Desktop installed and running.<br>
+
+2.Pull the Docker image:<br>
 ```bash
 docker pull abhijeet172005/react-app
 ```
@@ -86,8 +87,9 @@ The application will be accessible at http://localhost:3000.
 The app is ready to be deployed to platforms like Vercel or DockerHub.
 
 ### Vercel Deployment
-1.Create a Vercel account and link your GitHub repository.
-2.Vercel will automatically detect the project and deploy it.
+1.Create a Vercel account and link your GitHub repository.<br>
+
+2.Vercel will automatically detect the project and deploy it.<br>
 
 ### DockerHub
 Login to DockerHub:
@@ -105,19 +107,26 @@ docker push your-dockerhub-username/gdg-task-app
 ```
 
 ### Usage
-1.Toggle between light and dark mode using the switch in the header.
-2.Navigate through the site using the navigation bar or the hamburger menu on smaller screens.
-3.View key stats about GDG activities in the Stats section.
-4.Check upcoming events and contact the team via social links in the footer.
+1.Toggle between light and dark mode using the switch in the header.<br>
+
+2.Navigate through the site using the navigation bar or the hamburger menu on smaller screens.<br>
+
+3.View key stats about GDG activities in the Stats section.<br>
+
+4.Check upcoming events and contact the team via social links in the footer.<br>
 
 ### Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-1.Fork the Project.
-2.Create your Feature Branch (git checkout -b feature/YourFeature).
-3.Commit your Changes (git commit -m 'Add some YourFeature').
-4.Push to the Branch (git push origin feature/YourFeature).
-5.Open a Pull Request.
+1.Fork the Project.<br>
+
+2.Create your Feature Branch (git checkout -b feature/YourFeature).<br>
+
+3.Commit your Changes (git commit -m 'Add some YourFeature').<br>
+
+4.Push to the Branch (git push origin feature/YourFeature).<br>
+
+5.Open a Pull Request.<br>
 
 ### License
 Distributed under the MIT License. See LICENSE.txt for more information.
